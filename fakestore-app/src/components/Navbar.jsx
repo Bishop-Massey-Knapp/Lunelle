@@ -24,7 +24,7 @@ const NavbarCustom = () => {
           <Nav className="ms-auto align-items-center">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/products">Shop Products</Nav.Link>
-            <Nav.Link href="/products/new">Add Products</Nav.Link>
+            <Nav.Link as={Link} to="/products/new">Add Products</Nav.Link>
             <Nav.Link as={Link} to="/cart" className="cart-link position-relative ms-3">
               <FaShoppingCart size={22} />
               {cartItems.length > 0 && (
