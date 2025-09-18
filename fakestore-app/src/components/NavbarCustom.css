@@ -1,0 +1,81 @@
+.custom-navbar {
+  background-color: #191970 !important; /* midnight blue */
+  font-family: 'Quicksand', Arial, sans-serif;
+  box-shadow: 0 2px 8px rgba(33,49,99,0.07);
+  z-index: 1050;
+}
+
+.navbar-toggler {
+  background-color: transparent !important;
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: none !important;
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon div {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 3px;
+  margin: 4px auto;
+  background-color: #ede4c2 !important; /* moonlight */
+  border-radius: 2px;
+}
+
+.navbar-logo {
+  filter: drop-shadow(0 0 2em #7290ca88); /* night sky shadow */
+}
+
+.navbar-logo-full {
+  max-height: 40px;
+  display: inline-block !important;
+}
+
+.offcanvas-header, .offcanvas-title {
+  font-family: 'Almendra SC', serif;
+  color: #3f5eab;
+}
+
+.navbar-nav .nav-link {
+  color: #ede4c2 !important; /* moonlight */
+  font-family: 'Almendra SC', serif !important;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-left: 1.5rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #a6bae0 !important; /* light blue */
+}
+
+.cart-link {
+  color: #ede4c2 !important;
+  position: relative;
+}
+
+.cart-link:hover {
+  color: #b6a1e6 !important;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #b6a1e6;
+  color: #191970;
+  border-radius: 50%;
+  padding: 2px 7px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  box-shadow: 0 0 6px #b6a1e6aa;
+  z-index: 2;
+}
+
+

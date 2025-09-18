@@ -1,0 +1,220 @@
+/* Product Card Styles */
+.product-card {
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 24px 0 rgba(33,49,99,0.10);
+  background: #ede4c2;
+  border: none;
+  transition: box-shadow 0.2s, transform 0.2s cubic-bezier(.4,0,.2,1);
+}
+.product-card:hover {
+  box-shadow: 0 0 16px 4px #3f5eab, 0 4px 24px 0 rgba(33,49,99,0.18);
+  transform: scale(1.05);
+}
+.product-img {
+  object-fit: contain;
+  height: 220px;
+  background: #fff;
+  border-radius: 1.25rem 1.25rem 0 0;
+  padding: 1.5rem;
+}
+.product-title {
+  font-family: 'Almendra SC', serif;
+  font-size: 1.1rem;
+  color: #213163;
+  min-height: 3.5em;
+}
+.product-price {
+  color: #3f5eab;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.view-details-btn {
+  background: #213163 !important;
+  border: none;
+  border-radius: 2rem;
+  color: #ede4c2;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.2s cubic-bezier(.4,0,.2,1);
+}
+.view-details-btn:hover, .view-details-btn:focus {
+  background: #191970 !important;
+  color: #ede4c2;
+  box-shadow: 0 0 12px 2px #3f5eab;
+}
+.product-details-card {
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px 0 rgba(33,49,99,0.15);
+  background: #ede4c2;
+  border: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.mystical-glow {
+  box-shadow: 0 0 32px 8px #3f5eab, 0 4px 32px 0 rgba(33,49,99,0.15);
+}
+.product-desc {
+  color: #213163;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 1.1rem;
+}
+.product-category {
+  color: #7290ca;
+  font-family: 'Quicksand', Arial, sans-serif;
+}
+.enchant-btn-glow {
+  background: #213163 !important;
+  color: #ede4c2 !important;
+  border: none;
+  border-radius: 2rem;
+  font-family: 'Almendra SC', serif;
+  font-size: 1.1rem;
+  box-shadow: 0 0 12px 2px #a6bae0, 0 2px 12px 0 rgba(33,49,99,0.10);
+  transition: all 0.2s cubic-bezier(.4,0,.2,1);
+}
+.enchant-btn-glow:hover, .enchant-btn-glow:focus {
+  background: #191970 !important;
+  color: #ede4c2 !important;
+  box-shadow: 0 0 18px 4px #3f5eab, 0 2px 12px 0 rgba(33,49,99,0.18);
+}
+.exit-btn-glow {
+  background: #f5f5f7 !important;
+  color: #213163 !important;
+  border: 2px solid #e0e0e0;
+  border-radius: 50%;
+  font-size: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 1.2;
+  box-shadow: none;
+  transition: all 0.2s cubic-bezier(.4,0,.2,1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.exit-btn-glow:hover, .exit-btn-glow:focus {
+  background: #e0e0e0 !important;
+  color: #213163 !important;
+  border: 2px solid #bdbdbd;
+  box-shadow: none;
+}
+.mystical-input {
+  background: #ede4c2;
+  border: 2px solid #3f5eab;
+  border-radius: 1rem;
+  color: #213163;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 1.1rem;
+  box-shadow: 0 0 8px 1px #a6bae033;
+  margin-bottom: 0.5rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.mystical-input:focus {
+  border-color: #7290ca;
+  box-shadow: 0 0 12px 2px #3f5eab;
+  background: #fff;
+  color: #213163;
+}
+.cart-container {
+  background: #f5f5f7;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px 0 rgba(33,49,99,0.10);
+  padding: 2.5rem 2rem;
+}
+.edit-brush-btn {
+  background: rgba(255,255,255,0.85) !important;
+  border: none !important;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(33,49,99,0.10);
+  transition: background 0.2s;
+}
+.edit-brush-btn:hover, .edit-brush-btn:focus {
+  background: #b6a1e6 !important;
+}
+
+/* Delete Confirmation Modal Styles */
+.delete-confirm-modal {
+  background: #191970 !important;
+  color: #fff;
+  font-family: 'Quicksand', Arial, sans-serif;
+  border-radius: 1.5rem;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  box-shadow: 0 4px 32px 0 rgba(33,49,99,0.25);
+  text-align: center;
+}
+.delete-confirm-modal .modal-title {
+  color: #ede4c2;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.delete-confirm-modal .modal-body,
+.delete-confirm-modal .modal-footer {
+  color: #fff;
+  font-family: 'Quicksand', Arial, sans-serif;
+}
+
+.delete-item-btn {
+  background: #fff0f0 !important;
+  color: #a31515 !important; 
+  border: none !important;
+  border-radius: .5rem !important;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.2s cubic-bezier(.4,0,.2,1);
+  padding: 0.25rem 0.75rem !important;
+  font-size: 0.85rem !important;
+}
+.delete-item-btn:hover, .delete-item-btn:focus {
+  background: #a31515 !important;
+  color: #ede4c2 !important;
+  box-shadow: 0 0 12px 2px #a31515;
+}
+
+.keep-btn {
+  background: #6ec6ff !important;
+  color: #fff !important;
+  border: none;
+  border-radius: .5rem !important;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.2s cubic-bezier(.4,0,.2,1);
+  padding: 0.25rem 0.75rem !important;
+  font-size: 0.85rem !important;
+}
+.keep-btn:hover, .keep-btn:focus {
+  background: #2e82c2 !important;
+  color: #ede4c2 !important;
+}
+
+.button-row .delete-item-btn {
+  margin-left: 0.5rem;
+}
+.button-row .enchant-btn-glow {
+  margin-right: 0.5rem;
+}
+
+/* Modal overlay for contrast */
+.modal-backdrop.show {
+  background-color: #191970cc !important;
+}
+
+.two-line-ellipsis {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: normal !important;
+  min-height: 2.8em !important;
+  max-height: 3.2em !important;
+  height: auto !important;
+}

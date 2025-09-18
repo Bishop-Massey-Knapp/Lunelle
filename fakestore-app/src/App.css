@@ -1,0 +1,127 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('./assets/page_bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #213163; /* dusk blue as default text color */
+  font-family: 'Quicksand', Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Almendra SC', serif;
+  color: #3f5eab; /* gemstone */
+}
+
+h4, h5, h6, p, span, li, label, input, button, a {
+  font-family: 'Quicksand', Arial, sans-serif;
+}
+
+/* Color utility classes */
+.bg-light-blue { background-color: #a6bae0 !important; }
+.bg-gemstone { background-color: #3f5eab !important; }
+.bg-dusk-blue { background-color: #213163 !important; }
+.bg-night-sky { background-color: #7290ca !important; }
+.bg-moonlight { background-color: #ede4c2 !important; }
+.text-light-blue { color: #a6bae0 !important; }
+.text-gemstone { color: #3f5eab !important; }
+.text-dusk-blue { color: #213163 !important; }
+.text-night-sky { color: #7290ca !important; }
+.text-moonlight { color: #ede4c2 !important; }
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: transparent;
+  margin-top: 64px; /* space for fixed navbar */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.welcome-container {
+  background: #ede4c2; /* moonlight */
+  color: #191970; /* midnight blue */
+  box-shadow: 0 4px 24px 0 rgba(33,49,99,0.18);
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 2rem auto 2.5rem auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.welcome-header {
+  font-family: 'Almendra SC', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+  color: #191970;
+}
+
+.welcome-subtext {
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 1.25rem;
+  color: #191970;
+  margin-bottom: 0;
+}
+
+.enchant-btn {
+  background: #213163; /* dusk blue */
+  color: #ede4c2; /* moonlight */
+  font-family: 'Almendra SC', serif;
+  font-size: 1.2rem;
+  padding: 0.75rem 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 2px 12px 0 rgba(33,49,99,0.10);
+  transition: all 0.2s cubic-bezier(.4,0,.2,1);
+  cursor: pointer;
+  letter-spacing: 1px;
+  outline: none;
+}
+
+.enchant-btn:hover, .enchant-btn:focus {
+  background: #213163 !important; /* dusk blue */
+  color: #ede4c2; /* moonlight */
+  box-shadow: 0 0 16px 4px #3f5eab, 0 2px 12px 0 rgba(33,49,99,0.18); /* gemstone outer glow */
+}
